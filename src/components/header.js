@@ -14,9 +14,9 @@ const HeaderWrap = styled.header`
 
 const Header = ({ children }) => (
   <HeaderWrap>
-    <h1>
+    <Link to="/">
       B<i>&amp;</i>E
-    </h1>
+    </Link>
     <nav>
       <ul
         css={css`
@@ -30,16 +30,16 @@ const Header = ({ children }) => (
         `}
       >
         <li>
-          <Link>Lodging</Link>
+          <Link to="lodging">Lodging</Link>
         </li>
         <li>
-          <Link>Our Story</Link>
+          <Link to="our-story">Our Story</Link>
         </li>
         <li>
-          <Link>Wedding Party</Link>
+          <Link to="wedding-party">Wedding Party</Link>
         </li>
         <li>
-          <Link>RSVP</Link>
+          <Link to="rsvp">RSVP</Link>
         </li>
       </ul>
     </nav>
