@@ -5,7 +5,6 @@ import Header from "./header"
 
 const OutterWrap = styled.div`
   position: absolute;
-  border: 30px solid rebeccapurple;
   width: 100%;
   height: 100%;
 `
