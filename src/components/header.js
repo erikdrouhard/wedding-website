@@ -6,13 +6,16 @@ const HeaderWrap = styled.header`
   height: 50px;
   margin-bottom: 50px;
   display: flex;
+
+  h1 {
+    font-size: 18px;
+  }
 `
 
 const Header = ({ children }) => (
   <HeaderWrap>
     <h1>
-      Becca Fisher <i>&amp;</i>
-      <br /> Erik Drouhard
+      B<i>&amp;</i>E
     </h1>
     <nav>
       <ul
