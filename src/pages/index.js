@@ -6,9 +6,9 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <p>Oakholm Farm</p>
-    <p>08/08/2020</p>
-    <p>Southbridge AO</p>
+    <h1>Becca & Erik</h1>
+    <h2>08/08/2020</h2>
+    <h3>Oakholm Farm, Brookfield, MA</h3>
   </Layout>
 )
 

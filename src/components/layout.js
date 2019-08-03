@@ -11,6 +11,7 @@ const OutterWrap = styled.div`
 
 const InnerWrap = styled.div`
   padding: 20px;
+  text-align: center;
 `
 
 const Layout = ({ children }) => (
