@@ -1,31 +1,64 @@
 import React from "react"
 import { Link } from "gatsby"
+import Button from "./buttons"
 import styled, { css } from "styled-components"
 
 const HeaderWrap = styled.header`
   height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
+  width: 100%;
   display: flex;
-
-  h1 {
-    font-size: 18px;
+`
+const Logo = styled.h1`
+  font-size: 36px;
+  text-decoration: none;
+  a {
+    color: #5c5c5c;
+    text-decoration: none;
+  }
+  .glint {
+    color: rgba(145, 33, 255, 0.7);
+  }
+  &:hover {
+    text-decoration: none;
+    .glint {
+      color: #5c5c5c;
+    }
   }
 `
 
 const Header = ({ children }) => (
   <HeaderWrap>
-    <Link to="/">
-      B<i>&amp;</i>E
-    </Link>
-    <nav>
+    <Logo>
+      <Link to="/">
+        B<span className="glint">&amp;</span>E
+      </Link>
+    </Logo>
+    <nav
+      css={css`
+        display: flex;
+        font-size: 24px;
+        font-weight: bold;
+        width: 100%;
+      `}
+    >
       <ul
         css={css`
           display: flex;
-          padding: 30px;
+          padding-top: 8px;
 
           & li {
             padding: 0 30px;
             list-style: none;
+          }
+          & li.end {
+            margin-left: auto;
+          }
+          a {
+            color: #333333;
+            text-decoration: none;
+          }
+          a:hover {
           }
         `}
       >
@@ -38,10 +71,16 @@ const Header = ({ children }) => (
         <li>
           <Link to="wedding-party">Wedding Party</Link>
         </li>
-        <li>
-          <Link to="rsvp">RSVP</Link>
-        </li>
       </ul>
+      <Link
+        to="rsvp"
+        css={css`
+          align-content: flex-end;
+          margin-left: auto;
+        `}
+      >
+        <Button>RSVP</Button>
+      </Link>
     </nav>
   </HeaderWrap>
 )

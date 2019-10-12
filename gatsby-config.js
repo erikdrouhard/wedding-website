@@ -6,6 +6,21 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Abril Fatface`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Cormorant`,
+            variants: [`400`, `700`],
+          },
+        ],
+      },
+    },
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,

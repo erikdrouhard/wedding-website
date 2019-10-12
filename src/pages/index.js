@@ -1,15 +1,52 @@
 import React from "react"
 // import { Link } from "gatsby"
-import Layout from "../components/layout"
+import { HomeLayout } from "../components/layout"
 import SEO from "../components/seo"
+import styled, { css } from "styled-components"
+
+const HeroTextBlock = styled.div`
+  padding-top: 50px;
+  color: #5c5c5c;
+
+  p.date {
+    font-size: 64px;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+
+  p.location {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+`
 
 const IndexPage = () => (
-  <Layout>
+  <HomeLayout>
     <SEO title="Home" />
-    <h1>Becca & Erik</h1>
-    <h2>08/08/2020</h2>
-    <h3>Oakholm Farm, Brookfield, MA</h3>
-  </Layout>
+    <HeroTextBlock>
+      <h1
+        css={css`
+          padding-bottom: 20px;
+          font-size: 72px;
+        `}
+      >
+        Becca{" "}
+        <span
+          css={css`
+            color: rgba(145, 33, 255, 0.7);
+          `}
+        >
+          &amp;
+        </span>{" "}
+        Erik
+      </h1>
+      <p className="date">08 . 08 . 2020</p>
+      <p className="location">
+        Oakholm Farm Estate,
+        <br /> Brookfield, MA
+      </p>
+    </HeroTextBlock>
+  </HomeLayout>
 )
 
 export default IndexPage

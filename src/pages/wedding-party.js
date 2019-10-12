@@ -1,11 +1,13 @@
 import React from "react"
-import Header from "../components/header"
+import { InnerLayout } from "../components/layout"
+import SEO from "../components/seo"
 
 export default function WeddingParty() {
   return (
-    <>
-      <Header />
-      <h1>Wedding Party</h1>
-    </>
+    <InnerLayout>
+      <SEO title="Wedding Party" />
+      <h1>The Wedding Party</h1>
+      <p>Coming soon...</p>
+    </InnerLayout>
   )
 }
