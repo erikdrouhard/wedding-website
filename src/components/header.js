@@ -72,7 +72,7 @@ const Header = ({ children }) => (
           <Link to="wedding-party">Wedding Party</Link>
         </li>
       </ul>
-      <Link
+      {/* <Link
         to="rsvp"
         css={css`
           align-content: flex-end;
@@ -80,7 +80,7 @@ const Header = ({ children }) => (
         `}
       >
         <Button>RSVP</Button>
-      </Link>
+      </Link> */}
     </nav>
   </HeaderWrap>
 )
