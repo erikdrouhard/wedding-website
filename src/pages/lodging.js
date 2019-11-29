@@ -8,9 +8,9 @@ export default function Lodging() {
   return (
     <InnerLayout>
       <SEO title="Lodging" />
-      <h1>Lodging at the Southbrideg Hotel</h1>
+      <h1>Lodging at the Southbridge Hotel</h1>
       <p>
-        The wedding block will be under our name, Fisher Drouhard. We have 20
+        The wedding block will be under our name, "Fisher Drouhard". We have 20
         rooms saved, but they will open up more once we have filled that amount.
       </p>
       <p>
