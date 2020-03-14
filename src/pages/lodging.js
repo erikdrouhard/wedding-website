@@ -14,8 +14,11 @@ export default function Lodging() {
         rooms saved, but they will open up more once we have filled that amount.
       </p>
       <p>
-        <a target="_blank" href="https://www.southbridgehotel.com">
-          Book at southbridgehotel.com
+        <a
+          target="_blank"
+          href="http://bookings.ihotelier.com/bookings.jsp?groupID=2599165&hotelID=13066"
+        >
+          Book at Southbridge Hotel
         </a>
       </p>
     </InnerLayout>
