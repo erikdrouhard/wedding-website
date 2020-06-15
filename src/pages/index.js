@@ -40,7 +40,7 @@ const IndexPage = () => (
         </span>{" "}
         Erik
       </h1>
-      <p className="date">08 . 08 . 2020</p>
+      <p className="date">08 . 07 . 2021</p>
       <p className="location">
         Oakholm Farm Estate,
         <br /> Brookfield, MA
