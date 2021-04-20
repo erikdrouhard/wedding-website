@@ -3,7 +3,6 @@ import styled, { css } from "styled-components"
 
 const OurStoryWrap = styled.div`
   background-color: #f2f2f2;
-  font-family: "Cormorant", serif;
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
