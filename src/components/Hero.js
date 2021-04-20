@@ -65,7 +65,7 @@ const Title = styled.h1`
 
 const Date = styled.h2`
   font-size: 3rem;
-  letter-spacing: 0.75rem;
+  letter-spacing: 0.5rem;
   color: #f2f2f2;
 `
 const Location = styled.h3`
