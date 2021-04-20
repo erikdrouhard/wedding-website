@@ -104,6 +104,10 @@ h1, h2 {
   color: hsla(271deg, 70%, 50%, 1)
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 em,
 i {
   color: #828282;
