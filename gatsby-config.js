@@ -14,10 +14,6 @@ module.exports = {
             family: `Abril Fatface`,
             subsets: [`latin`],
           },
-          {
-            family: `Cormorant`,
-            variants: [`400`, `700`],
-          },
         ],
       },
     },
