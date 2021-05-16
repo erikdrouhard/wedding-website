@@ -26,7 +26,7 @@ const Wrapper = styled.div`
   overflow: hidden;
   background-size: cover;
   background-position-x: 50%;
-  min-height: 100%;
+  height: 100%;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
 
