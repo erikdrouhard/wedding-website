@@ -90,9 +90,12 @@ const Title = styled.h1`
 `
 
 const Date = styled.h2`
-  font-size: 3rem;
+  font-size: 2.5rem;
   letter-spacing: 0.5rem;
   color: #f2f2f2;
+  @media (min-width: 540px) {
+    font-size: 3rem;
+  }
   @media (min-width: 960px) {
     font-size: 4rem;
     letter-spacing: 0.5rem;

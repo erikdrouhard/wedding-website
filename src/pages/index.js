@@ -21,7 +21,7 @@ const ContentWrap = styled.div`
   }
   @media (min-width: 720px) {
     max-width: 1366px;
-    padding: 30px;
+    padding: 30px 30px 0 30px;
     & > * + * {
       margin-top: 30px;
     }
