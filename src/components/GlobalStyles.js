@@ -33,6 +33,7 @@ const GlobalStyles = createGlobalStyle`
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    margin-bottom: 1rem;
   }
 
   a:not([class]) {
@@ -84,9 +85,12 @@ const GlobalStyles = createGlobalStyle`
 
 
   body {
-    background: #212121;
+    background: #151515;
     color: var(--body);
     font-family: Georgia, "Times New Roman", Times, serif;
+    @media (min-width: 960px) {
+      font-size: 1.2rem;
+    }
   }
 
   h1,
@@ -102,8 +106,18 @@ const GlobalStyles = createGlobalStyle`
     color: hsla(271deg, 70%, 50%, 1)
   }
 
+  h2 {
+    font-size: 1.5rem;
+    @media (min-width: 960px) {
+      font-size: 2.25rem;
+    }
+  }
+
   p {
     margin-bottom: 1rem;
+    @media (min-width: 960px) {
+      font-size: 1.2rem;
+    }
   }
 
   em,

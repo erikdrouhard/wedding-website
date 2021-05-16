@@ -13,7 +13,6 @@ const PageWrap = styled.div`
 `
 
 const ContentWrap = styled.div`
-  height: 100%;
   margin: 0 auto;
   background: #e0e0e0;
   padding: 20px;
