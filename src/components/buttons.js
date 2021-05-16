@@ -2,8 +2,8 @@ import React from "react"
 import styled from "styled-components"
 
 const CTAButton = styled.a`
-  background: #9b51e0;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, #9b51e0 0%, #4a008f 100%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 1rem 0;
   text-align: center;
