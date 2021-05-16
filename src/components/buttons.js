@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 const CTAButton = styled.a`
   background: #9b51e0;
