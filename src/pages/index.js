@@ -6,20 +6,39 @@ import Lodging from "../components/Lodging"
 import GlobalStyles from "../components/GlobalStyles"
 import styled from "styled-components"
 
-const IndexWrap = styled.div`
+const PageWrap = styled.div`
+  max-width: 1366px;
+  height: 100%;
+  margin: 0 auto;
+`
+
+const ContentWrap = styled.div`
+  height: 100%;
+  margin: 0 auto;
+  background: #e0e0e0;
+  padding: 20px;
   & > * + * {
-    margin-top: 1rem;
+    margin-top: 20px;
+  }
+  @media (min-width: 720px) {
+    max-width: 1366px;
+    padding: 30px;
+    & > * + * {
+      margin-top: 30px;
+    }
   }
 `
 
 const IndexPage = () => (
-  <IndexWrap>
-    <GlobalStyles />
-    <Hero />
-    <OurStory />
-    <WeddingParty />
-    <Lodging />
-  </IndexWrap>
+  <PageWrap>
+    <ContentWrap>
+      <GlobalStyles />
+      <Hero />
+      <OurStory />
+      <WeddingParty />
+      <Lodging />
+    </ContentWrap>
+  </PageWrap>
 )
 
 export default IndexPage

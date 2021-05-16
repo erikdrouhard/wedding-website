@@ -23,12 +23,12 @@ const Wrapper = styled.div`
   background-color: #333;
   background-image: url(${heroBgPhone});
   background-repeat: no-repeat;
+  overflow: hidden;
   background-size: cover;
   background-position-x: 50%;
-  min-height: 90vh;
+  min-height: 100%;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
-  text-align: center;
 
   &::before {
     content: "";
@@ -45,36 +45,69 @@ const Wrapper = styled.div`
       rgba(0, 0, 0, 0.75) 100%
     );
   }
-  @media (min-width: 540px) {
+  @media (min-width: 720px) {
     background-image: url(${heroBgDesktop});
     background-size: cover;
     background-position-x: 90%;
+    max-height: 744px;
+    &::before {
+      content: "";
+      background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.75) 100%
+      );
+    }
   }
 `
 
 const Content = styled.div`
-  position: absolute;
-  bottom: 91px;
-  width: 100%;
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  padding: 0 0 20px 0;
+  @media (min-width: 720px) {
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 0 0 30px;
+  }
+  @media (min-width: 960px) {
+    padding: 0 0 0 10%;
+  }
 `
 
 const Title = styled.h1`
   font-size: 2.25rem;
   color: #f2f2f2;
+  @media (min-width: 960px) {
+    font-size: 3rem;
+  }
 `
 
 const Date = styled.h2`
   font-size: 3rem;
   letter-spacing: 0.5rem;
   color: #f2f2f2;
+  @media (min-width: 960px) {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+  }
 `
 const Location = styled.h3`
   font-size: 1.5rem;
   color: #ecbbff;
   max-width: 300px;
-  margin: auto;
   line-height: 1.3;
   letter-spacing: 0.1rem;
+  @media (min-width: 960px) {
+    font-size: 2.25rem;
+    max-width: 480px;
+  }
 `
 
 export default Hero
