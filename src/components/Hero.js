@@ -2,12 +2,17 @@ import React from "react"
 import styled from "styled-components"
 import heroBgPhone from "../images/Becca_Erik_Phone.png"
 import heroBgDesktop from "../images/Becca_Erik_Desktop.png"
+import { motion } from "framer-motion"
 import "@fontsource/abril-fatface"
 
 function Hero() {
   return (
     <Wrapper>
-      <Content>
+      <Content
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
         <Title>
           Becca <span style={{ color: "#ecbbff" }}>&amp;</span> Erik
         </Title>
@@ -18,7 +23,7 @@ function Hero() {
   )
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled(motion.div)`
   position: relative;
   background-color: #333;
   background-image: url(${heroBgPhone});
@@ -61,7 +66,7 @@ const Wrapper = styled.div`
   }
 `
 
-const Content = styled.div`
+const Content = styled(motion.div)`
   position: relative;
   min-height: 100%;
   display: flex;
